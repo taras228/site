@@ -1,0 +1,348 @@
+
+<html >
+	<head>
+		
+		<meta http-equiv="Content-Type" content="text.html; charset=utf-8">
+		<title>Оборонні споруди України</title>
+		<link href="css/style.css"  rel="stylesheet" />
+		<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	</head>
+	<body onLoad="scroll();">
+	<div id="wrapper">
+			<div id="header">
+			
+				<div id="logo">
+					<a href="../index.html"><img src="images/logo.png" alt="Логотип" /></a>
+				</div>
+				<div id="menu">
+					<ul>
+						<li><a class="current" href="../index.html">Головна</a></li>
+						<li><a href="../Zamku_ua/Zamok_ua.html">Замки України</a></li>
+						<li><a href="../Fort/Fort.html">Фортеці України</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			
+			<div class="big">
+			
+			<div class="block block1" >
+				<a href="index.html"><img src="images/img_left.jpg" alt="Замок_невідомий" id="img_1" style="opacity:0.01;" /></a>
+			</div>
+			
+			
+			<div class="block " >
+				<div id="div-regForm">
+				<h2 align="center">Реєстрація</h2>
+				<fieldset>
+				
+
+					
+						<form id="regForm" method="post">
+							<table>
+							<tbody>
+							<tr>
+								<td><label for="fname">Введіть логін:</label></td>
+								<td><div class="input-container">
+									<input name="login" id="login" type="text" />
+								</div></td>
+							</tr>
+							<tr>
+								<td><label for="lname">Введіть пароль:</label></td>
+								<td><div class="input-container">
+									<input name="password" id="password" type="password" />
+								</div></td>
+							</tr>
+							<tr>
+								<td><label for="lname">Повторіть пароль:</label></td>
+								<td><div class="input-container">
+									<input name="password2" id="password2" type="password" />
+								</div>
+							</tr>
+							<tr>
+								<td><label for="email">Введіть ваш e-mail:</label></td>
+								<td><div class="input-container">
+									<input name="email" id="email" type="text" />
+								</div></td>
+							</tr>
+							
+							<tr>
+								<td><label for="email" ">Ваше ім'я:</label></td>
+								<td><div class="input-container">
+									<input name="fname" id="fname" type="text" />
+								</div></td>
+							</tr>
+							<tr>
+								<td><label for="email" >Ваше прізвище:</label></td>
+								<td><div class="input-container">
+									<input name="lname" id="lname" type="text" />
+								</div></td>
+							</tr>
+							<tr>
+								<td><label for="sex-select">Ваша стать:</label></td>
+								<td>
+									<div class="input-container">
+										<select name="sex-select" id="sex-select">
+											<option value="0">Виберіть стать:</option>
+											<option value="1">Чоловіча</option>
+											<option value="2">Жіноча</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td><label>Дата народження:</label></td>
+								<td>
+									<div class="input-container">
+										
+										<select name="day">
+											<option value="0">День:</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+											<option value="13">13</option>
+											<option value="14">14</option>
+											<option value="15">15</option>
+											<option value="16">16</option>
+											<option value="17">17</option>
+											<option value="18">18</option>
+											<option value="19">19</option>
+											<option value="20">20</option>
+											<option value="21">21</option>
+											<option value="22">22</option>
+											<option value="23">23</option>
+											<option value="24">24</option>
+											<option value="25">25</option>
+											<option value="26">26</option>
+											<option value="27">27</option>
+											<option value="28">28</option>
+											<option value="29">29</option>
+											<option value="30">30</option>
+											<option value="31">31</option>
+										</select>
+										<select name="month">
+											<option value="0">Місяць:</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+										</select>
+										
+										<input name="year" id="year" type="text" size="4" maxlength="4">
+									</div>
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<td><input type="button" class="greenButton" value="Зареєструвати" id="button1"/>
+								</td>
+							</tr>
+							</tbody>
+							</table>
+						</form>
+					<div id="error">
+						&nbsp;
+					</div>
+				</fieldset>
+			</div>				
+				
+				
+				
+				</div>
+			
+
+			<div class="block block3" >
+				<a href="index.html"><img src="images/img_right.jpg" alt="Хотин" id="img_2" style="opacity:0.99;" /></a>
+				</div>
+				
+			</div>
+			<div id="footer">
+		<form method="POST" name="JavaForm">
+			<div ><input type="text" size="100" name="display"></div>
+		</form></div>
+			
+			<script>
+			///////////////////enter/////////////////
+			
+			
+			var getName = function ()
+	{
+		
+		var text = document.getElementById("fname").value;
+		var text2 = document.getElementById("lname").value;
+		var pas1 = document.getElementById("password").value;
+		var pas2 = document.getElementById("password2").value;
+		var e_mail = document.getElementById("email").value;
+		var login = document.getElementById("login").value;
+		var tmp = 0;
+		var tmp2 = 0;
+		for (var i=0; i<e_mail.length; i++)
+		{
+			if (e_mail[i] == "@")
+			{
+				tmp++;
+			}
+		}
+
+		for (var i=0; i<e_mail.length; i++)
+		{
+			if (e_mail[i] == "@")
+			{
+				for (var j = i; j<e_mail.length; j++)
+				{
+					if (e_mail[j] == ".")
+					tmp2++;
+				}
+				break;
+			}
+		}
+		
+
+		
+		var dotPos = e_mail.lastIndexOf('.');
+		var atPos = e_mail.indexOf('@');
+		
+		if (login.length == 0)
+		{
+			alert("Введіть логін");
+		}
+		else if((pas1.length || pas2.length) == 0)
+		{
+			alert("Введіть пароль");
+		}
+		else if  (pas1 != pas2 )
+		{
+			alert("Неправильно введені паролі!");
+		}
+		else if (e_mail.length == 0 )
+		{
+			alert("Введіть e-mail");
+		}
+		else if (atPos<=0 || dotPos <= atPos+1 || dotPos == e_mail.length -1)
+		{
+			alert("Введіть коректний e-mail");
+		}
+		else if(text.length == 0)
+		{
+			alert("Введіть ім'я");
+		}
+		else if (text[0] != text[0].toUpperCase() )
+		{
+			alert("Ім'я пишеться з великої літери")	
+		}
+		else if(text2.length == 0)
+		{
+			alert("Введіть прізвище");
+		}
+		else if (text2[0] != text2[0].toUpperCase() )
+		{
+			alert("Прізвище пишеться з великої літери")	
+		}
+		else 
+		{
+			alert("Дані введено коректно!")
+		}
+	}
+
+	var button = document.getElementById("button1");
+	button.onclick = getName;
+	
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			//image/////////////////////////////////////////////////////////////
+	var image_count = 2;
+	var interval = 4000; 
+	var time_out = 15; 
+	var i = 2;
+	var timeout;
+	var opacity = 100;
+	function change_image() 
+	{
+		opacity--;
+		var j = i + 1;
+		var current_image = 'img_' + i;
+		if (i == image_count) j = 1;
+		var next_image = 'img_' + j;
+		document.getElementById(current_image).style.opacity=opacity/100;
+		document.getElementById(current_image).style.filter='alpha(opacity='+opacity+')';
+		document.getElementById(next_image).style.opacity= (100-opacity)/100;
+		document.getElementById(next_image).style.filter=' alpha(opacity='+(100-opacity)+')';
+		timeout = setTimeout("change_image()", time_out);
+		if (opacity==1) 
+		{
+			opacity = 100;
+			clearTimeout(timeout);
+			i++;
+			if (i>image_count) i=1;
+				timeout = setTimeout("change_image()", interval);
+		}
+	}
+	change_image()
+	
+	
+	///////////////////////////scroll
+	
+	
+	var id;
+	var msg="       Увага!!! Для того щоб зареєструватись на нашому сайті вам потрібно коректно заповнити всі поля реєстрації. Поле e-mail повинно містити ваш реальний e-mail типу XXX@XXX.XXX; поля ім'я та прізвище повинні починатися з великої літери; паролі повинні співпадати!!!                    ";
+	function scroll() 
+	{
+		var lchar;
+		lchar = msg.substring(0,1);
+		msg += lchar;
+		msg= msg.substring(1,msg.length);
+		document.JavaForm.display.value = msg.substring(0,msg.length);
+		id = setTimeout("scroll()",300);
+	}
+	
+	
+	</script>
+
+	 <script>
+      var myDataRef = new Firebase('https://amber-inferno-2924.firebaseio.com/');
+      $('#button1').click(function (elem) {
+         var sendToDB = $('#regForm').serializeArray();
+         myDataRef.push(sendToDB, function(err){
+        
+         });
+         
+        
+      });
+    </script>
+	
+		</div>		
+	</body>
+</html>

@@ -1,0 +1,80 @@
+
+
+.ring1
+{
+display: block;
+border:1px solid;
+
+
+height:40px;
+width:40px;
+border-radius:40px;
+background:yellow;
+position:absolute;
+top:100px;
+left:40px;
+
+}
+ p{
+margin-top:10px;
+margin-left:15px;
+}
+.ring2
+{
+display: block;
+border:1px solid;
+
+
+height:40px;
+width:40px;
+border-radius:40px;
+background:red;
+position:absolute;
+top:100px;
+left:120px;
+
+}
+
+.ring3
+{
+display: block;
+border:1px solid;
+
+
+height:40px;
+width:40px;
+border-radius:40px;
+background:yellow;
+position:absolute;
+top:100px;
+left:200px;
+
+}
+
+
+
+.block1 {
+width:120px;
+height: 6px;
+background:green;
+position:absolute;
+top:118px;
+left:80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
